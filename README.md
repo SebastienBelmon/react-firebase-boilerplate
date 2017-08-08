@@ -15,6 +15,8 @@ Get started
 >
 >3 `firebase init`
 >
->4 `yarn deploy`
+>4 `yarn build`
 >
->5 `yarn start`
+>5 `yarn deploy`
+>
+>6 `yarn start`
