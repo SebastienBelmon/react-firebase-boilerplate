@@ -6,17 +6,25 @@ import { Link } from 'react-router-dom';
 export default class Header extends Component {
   render() {
     return(
-      <nav className="navbar navbar-inverse navbar-fixed-top">
-        <Link className="navbar-brand" to="/">Firebase Boilerplate</Link>
-        <ul className="nav navbar-nav">
-          <li className="active">
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="#">Auth</Link>
-          </li>
-          <p className="navbar-text navbar-right">Signed in as:</p>
-        </ul>
+      <nav className="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
+        <Link className="navbar-brand" to='/'>Firebase starter</Link>
+        {/* toggle navbar (small screen) */}
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item active">
+              <Link className="nav-link" to='/'>Home <span className="sr-only">(current)</span></Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to='/'>Features</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to='/'>Pricing</Link>
+            </li>
+          </ul>
+        </div>
       </nav>
     );
   }
