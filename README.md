@@ -1,7 +1,7 @@
 React Firebase boilerplate
 =====================
 
-Simple starter with react and firebase, using bootstrap v3 for simple styling
+Simple starter with react and firebase, using bootstrap v4 for simple styling
 
 ----------
 
